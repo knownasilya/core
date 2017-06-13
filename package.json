@@ -13,7 +13,7 @@
     "bluebird": "^3.4.6",
     "denali": "0.0.26",
     "denali-cli": "0.0.x",
-    "denali-rethinkdb": "file:///Users/iradchenko/sandbox/denali-rethinkdb",
+    "denali-rethinkdb": "^0.1.1",
     "denali-typescript": "^0.0.3",
     "eslint-config-denali": "^1.1.2",
     "lodash": "^4.0.0"

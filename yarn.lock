@@ -1449,11 +1449,11 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bluebird@^2.9.33:
+"bluebird@>= 2.3.2 < 3", bluebird@^2.9.33:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
 
-bluebird@^3.0.0, bluebird@^3.4.1, bluebird@^3.4.6, bluebird@^3.4.7:
+bluebird@^3.0.0, bluebird@^3.4.1, bluebird@^3.4.6, bluebird@^3.4.7, bluebird@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
 
@@ -2418,6 +2418,15 @@ denali-eslint@0.0.x:
     js-string-escape "^1.0.1"
     lodash "^4.17.4"
 
+denali-rethinkdb@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/denali-rethinkdb/-/denali-rethinkdb-0.1.1.tgz#ebd5d0b6d0469960c70ef255b29545eb4abecb48"
+  dependencies:
+    bluebird "^3.5.0"
+    denali "0.0.x"
+    denali-cli "0.0.x"
+    rethinkdb "^2.3.3"
+
 denali-typescript@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/denali-typescript/-/denali-typescript-0.0.3.tgz#378d8cb5a3990559a46e3adfee2d3e1106a6d305"
@@ -2521,7 +2530,7 @@ denali@0.0.21:
     wordwrap "^1.0.0"
     yargs "^6.6.0"
 
-denali@0.0.26:
+denali@0.0.26, denali@0.0.x:
   version "0.0.26"
   resolved "https://registry.yarnpkg.com/denali/-/denali-0.0.26.tgz#23859f551e15373a148ec35f0f1ee47ddf51a1f6"
   dependencies:
@@ -5486,6 +5495,12 @@ restore-cursor@^2.0.0:
   dependencies:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
+
+rethinkdb@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/rethinkdb/-/rethinkdb-2.3.3.tgz#3dc6586e22fa1dabee0d254e64bd0e379fad2f72"
+  dependencies:
+    bluebird ">= 2.3.2 < 3"
 
 retry@^0.10.0:
   version "0.10.1"
