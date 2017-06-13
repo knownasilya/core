@@ -14,9 +14,16 @@ export default function environmentConfig(environment) {
     //     connection: {}
     //   }
     // },
-    ormAdapter: 'memory',
     database: {
-
+      config: {
+        host: 'localhost',
+        port: 28015,
+        db: 'test'
+      },
+      autoCreateTables: true,
+      tables: [
+        'test'
+      ]
     }
   };
 

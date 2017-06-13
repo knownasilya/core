@@ -2,8 +2,10 @@ import ApplicationAction from './application';
 
 export default class IndexAction extends ApplicationAction {
 
-  respond() {
-    this.render(200, { message: 'Welcome to Denali!' }, { serializer: 'raw' });
+  async respond() {
+    let models = await this.db.all('test');
+    models.forEach(model => console.log(model.inspect()));
+    return models;
   }
 
 }
