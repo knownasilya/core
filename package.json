@@ -11,10 +11,9 @@
   },
   "dependencies": {
     "bluebird": "^3.4.6",
-    "denali": "0.0.26",
-    "denali-cli": "0.0.x",
-    "denali-rethinkdb": "^0.1.1",
-    "denali-typescript": "^0.0.3",
+    "denali": "0.0.27",
+    "denali-cli": "0.0.12",
+    "denali-rethinkdb": "^0.2.1",
     "eslint-config-denali": "^1.1.2",
     "lodash": "^4.0.0"
   },
@@ -34,7 +33,8 @@
     "babel-plugin-transform-regenerator": "^6.16.1",
     "babel-plugin-transform-runtime": "^6.15.0",
     "denali-babel": "0.0.x",
-    "denali-eslint": "0.0.x"
+    "denali-eslint": "0.0.x",
+    "denali-typescript": "^0.0.3"
   },
   "ava": {
     "plugins": [],

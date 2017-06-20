@@ -1,3 +1,3 @@
-import { FlatSerializer } from 'denali';
+import { JSONAPISerializer } from 'denali';
 
-export default FlatSerializer;
+export default JSONAPISerializer;

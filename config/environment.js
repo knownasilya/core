@@ -3,6 +3,7 @@ export default function environmentConfig(environment) {
     server: {
       port: process.env.PORT || 3000
     },
+    bodyParser: { type: 'application/vnd.api+json' },
     // == Migrations
     //
     // If you are planning on using migrations with your database, uncomment this
