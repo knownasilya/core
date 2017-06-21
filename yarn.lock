@@ -2598,9 +2598,9 @@ denali-eslint@0.0.x:
     js-string-escape "^1.0.1"
     lodash "^4.17.4"
 
-denali-rethinkdb@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/denali-rethinkdb/-/denali-rethinkdb-0.2.1.tgz#909e2e1f360e93f9e986c488492d72c9b21add78"
+denali-rethinkdb@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/denali-rethinkdb/-/denali-rethinkdb-0.2.3.tgz#e154ecb0db368483c8ae98256d9aebd19a8a2636"
   dependencies:
     bluebird "^3.5.0"
     denali "0.0.27"
