@@ -6,17 +6,18 @@ appAcceptanceTest(test);
 test('POST /projects > creates a project', async (t) => {
   let result = await t.context.app.post('/projects', {
       // Add the project payload here
+    title: 'hello'
   });
 
   t.is(result.status, 201);
-  // t.is(result.body.foo, 'bar');
+  t.is(result.body.title, 'hello');
 });
 
 test('GET /projects > should list projects', async (t) => {
   let result = await t.context.app.get('/projects');
 
   t.is(result.status, 200);
-  // t.is(result.body.foo, 'bar');
+  t.is(result.body.foo, 'bar');
 });
 
 test('GET /projects/:id > should show a project', async (t) => {
