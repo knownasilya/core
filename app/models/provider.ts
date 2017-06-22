@@ -1,5 +1,5 @@
 import { attr /* , hasOne, hasMany */ } from 'denali';
-import joi from 'joi';
+import * as joi from 'joi';
 import ApplicationModel from './application';
 
 export default class ProviderModel extends ApplicationModel {

@@ -1,5 +1,5 @@
 import { Model } from 'denali';
-import joi from 'joi';
+import * as joi from 'joi';
 
 
 export default class ApplicationModel extends Model {
