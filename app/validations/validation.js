@@ -6,17 +6,15 @@ export default class Validation {
     let validateOptions = {
       allowUnknown: true
     };
-    let validation;
 
     if (alternateSchema) {
-      validation = joi.validate(item, alternateSchema, validateOptions);
-    } else {
-      if (!schema) {
-        throw new Error('Schema not defined on validation');
-      }
-      validation = joi.validate(item, schema, validateOptions);
+      return joi.validate(item, alternateSchema, validateOptions);
     }
 
-    return validation;
+    if (!schema) {
+      throw new Error('Schema not defined on validation');
+    }
+
+    return joi.validate(item, schema, validateOptions);
   }
 }
