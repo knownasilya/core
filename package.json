@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "bluebird": "^3.4.6",
-    "denali": "0.0.27",
+    "denali": "0.0.29",
     "denali-cli": "0.0.12",
-    "denali-rethinkdb": "^0.2.3",
+    "denali-rethinkdb": "^0.2.4",
     "joi": "^10.6.0",
     "lodash": "^4.0.0",
     "tslint": "^5.4.3",
