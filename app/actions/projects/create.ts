@@ -1,13 +1,15 @@
+import { ResponderParams } from 'denali';
 import ApplicationAction from '../application';
+import createValidationErrors from '../../utils/create-validation-errors';
 
 export default class CreateProject extends ApplicationAction {
 
-  async respond({ body }) {
-    let post = this.db.create('project', body);
+  async respond(params: ResponderParams) {
+    let post = this.db.create('project', params.body);
     let validation = post.validate();
-    
-    if (validation.error) {
-      return this.render(400, validation.error);
+
+    if (validation.hasErrors) {
+      return this.render(422, validation.errors);
     }
 
     await post.save();
